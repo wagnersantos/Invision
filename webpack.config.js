@@ -1,5 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
@@ -25,7 +26,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader: 'styled-loader',
+            loader: 'style-loader',
           },
           {
             loader: 'css-loader',
@@ -46,9 +47,10 @@ module.exports = {
     historyApiFallback: true,
     port: 3000,
   },
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
-  },
-  plugins: [new CleanWebpackPlugin()],
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebPackPlugin({
+      template: './public/index.html',
+    }),
+  ],
 };
