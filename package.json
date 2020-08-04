@@ -5,6 +5,9 @@
   "repository": "https://github.com/wagnersantos/Invision.git",
   "author": "wagnersantos <wagtvc@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.8",
     "@types/node": "^14.0.27",
