@@ -26,6 +26,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "file-loader": "^6.0.0",
     "git-commit-msg-linter": "^2.4.4",
     "html-webpack-plugin": "^4.3.0",
     "husky": "^4.2.5",
